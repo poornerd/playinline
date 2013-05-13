@@ -37,7 +37,7 @@ public class PlayInline extends Controller {
         final String content = values.get("content")[0];
         final String contentId = values.get("contentId")[0];
         final String pageId = values.get("pageId")[0];
-        final String templateFilename = session("aloha.filename." + pageId);
+        final String templateFilename = session("playinline.filename." + pageId);
         final String fullTemplateFilename = Play.application().path() + "/app/views/" + templateFilename;
 
         System.out.println("pageId:" + pageId);
@@ -80,7 +80,7 @@ public class PlayInline extends Controller {
     }
 
     public static boolean isPlayInlineOn() {
-        return Play.application().configuration().getBoolean("play-aloha.admin");
+        return Play.application().configuration().getBoolean("playinline.admin");
     }
 
     static void saveToTemplate(final String fullTemplateFilename, final String pageId, final String contentId, final String content) {

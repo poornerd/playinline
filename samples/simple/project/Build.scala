@@ -4,12 +4,11 @@ import play.Project._
 
 object ApplicationBuild extends Build {
 
-  val appName         = "playinline"
+  val appName         = "simple"
   val appVersion      = "1.0-SNAPSHOT"
 
   val appDependencies = Seq(
-    "org.jsoup" % "jsoup" % "1.7.2",
-    "commons-io" % "commons-io" % "2.4",
+      "com.poornerd" % "playinline_2.10" % "1.0-SNAPSHOT",
     // Add your project dependencies here,
     javaCore,
     javaJdbc,
@@ -18,7 +17,7 @@ object ApplicationBuild extends Build {
 
   val main = play.Project(appName, appVersion, appDependencies).settings(
     // Add your own project settings here      
-    organization := "com.poornerd"
+      resolvers += Resolver.url("My Github", url("http://poornerd.github.com/releases/"))(Resolver.ivyStylePatterns)
   )
 
 }

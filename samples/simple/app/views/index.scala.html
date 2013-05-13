@@ -1,0 +1,12 @@
+@(message: String)
+@session.put("playinline.filename." + request.uri,"index.scala.html")
+@main("Welcome to Play 2.1") {
+    
+playinline test:
+
+<p>First some messages:</p>
+<p>index.test1: @Messages("index.test1")</p>
+<p>index.test2: @Messages("index.test2")</p>
+<p>Then some inline HTML:</p>
+<p id="firsttest" class="editable">This is some HTML to edit!</p>
+}
