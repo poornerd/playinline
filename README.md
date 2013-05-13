@@ -27,6 +27,10 @@ and
 #playinline config                                                                                                                                                                           
   playinline.admin=true
 ```
+6. Add this to your conf/routes so that the routes from the module are used in your application:
+``` 
+-> /playinline               playinline.Routes
+``` 
 
 Now you can add @Messages("message.key") tags to any template and edit them.
 
