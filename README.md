@@ -3,8 +3,14 @@ playinline
 
 Inline Editing of Play! Framwork 2 Scala Templates in the Browser
 
-Usage:
+![playinline content editing](/docs/aloha-saves.jpg "Optional title")
 
+Project Goal:
+--------------
+To provide tools to be used during the development process to accelerate the frontend finetuning, by not requiring programming skills for editing content and messages.
+
+Usage:
+--------------
 1. Add dependency to project/Build.scala:
 ``` 
   val appDependencies = Seq(
@@ -32,6 +38,8 @@ and
 -> /playinline               playinline.Routes
 ``` 
 
+How to Edit Content and Messages:
+--------------
 Now you can add @Messages("message.key") tags to any template and edit them.
 
 You can edit HTML elements from the templates in the template as well be doing the following:
