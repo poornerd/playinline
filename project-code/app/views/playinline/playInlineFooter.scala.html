@@ -1,0 +1,30 @@
+@if(com.poornerd.playinline.PlayInline.isPlayInlineOn()) {
+     <!-- Aloha Stuff
+    ================================================== -->
+               <!-- load the jQuery and require.js libraries -->
+              <script type="text/javascript" src="http://cdn.aloha-editor.org/latest/lib/require.js"></script>
+ 
+              <!-- load the Aloha Editor core and some plugins -->
+              <script src="http://cdn.aloha-editor.org/latest/lib/aloha.js"
+                                   data-aloha-plugins="common/ui,
+                                                        common/format,
+                                                        common/list,
+                                                        common/link,
+                                                        common/highlighteditables">
+              </script>
+               
+              <!-- load the Aloha Editor CSS styles -->
+              <link href="http://cdn.aloha-editor.org/latest/css/aloha.css" rel="stylesheet" type="text/css" />
+                
+            <!-- save the content of the page -->
+            <script src="/assets/javascripts/play-inline-save.js"></script>
+
+              <!-- make all elements with class="editable" editable with Aloha Editor -->
+              <script type="text/javascript">
+                     Aloha.ready( function() {
+                            var $ = Aloha.jQuery;
+                            $('.editable').aloha();
+                     });
+              </script>  
+              
+}
