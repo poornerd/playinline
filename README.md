@@ -52,3 +52,14 @@ You can edit HTML elements from the templates in the template as well be doing t
 ```
 <p id="firsttest" class="editable">This is some HTML to edit!</p>
 ```
+
+
+
+
+---
+
+### License
+
+Copyright (c) 2013 Brian Porter - http://www.poornerd.com   Twitter:poornerd
+
+Published under Apache Software License 2.0, see LICENSE
